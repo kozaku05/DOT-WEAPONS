@@ -1,0 +1,18 @@
+#navigation {
+    margin-top: 15px; /* 上の余白 */
+}
+
+#navigation a {
+    text-decoration: none; /* 下線を消す */
+    color: #007bff; /* リンクの色 */
+    margin: 0 15px; /* リンク間の余白 */
+    font-weight: bold; /* 太字 */
+}
+
+#navigation a:hover {
+    color: #0056b3; /* ホバー時の色 */
+}
+body{
+    background-color: #d5d6b9;
+    text-align: center;
+}
