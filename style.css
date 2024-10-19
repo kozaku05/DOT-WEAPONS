@@ -1,0 +1,44 @@
+body{
+    background-color: #d5d6b9;
+    text-align: center;
+}
+
+.pagetop {
+    text-align: center; /* 中央揃え */
+    padding: 20px; /* 内側の余白 */
+    background-color: #f0f0f0; /* 背景色 */
+    border-bottom: 2px solid #ccc; /* 下の境界線 */
+}
+
+h1 {
+    font-size: 2.5em; /* 見出しのサイズ */
+    margin: 0; /* 外側の余白をゼロに */
+    color: #333; /* テキストの色 */
+}
+
+#historyCount {
+    font-size: 1.2em; /* カウントのサイズ */
+    color: #666; /* テキストの色 */
+}
+
+#navigation {
+    margin-top: 15px; /* 上の余白 */
+}
+
+#navigation a {
+    text-decoration: none; /* 下線を消す */
+    color: #007bff; /* リンクの色 */
+    margin: 0 15px; /* リンク間の余白 */
+    font-weight: bold; /* 太字 */
+}
+
+#navigation a:hover {
+    color: #0056b3; /* ホバー時の色 */
+}
+#explanation{
+    text-align: center; /* 中央揃え */
+    padding: 20px; /* 内側の余白 */
+    background-color: #f0f0f0; /* 背景色 */
+    border-bottom: 2px solid #ccc; /* 下の境界線 */
+    margin-top: 10px;
+}
