@@ -1,26 +1,30 @@
-body{
-    background-color: #d5d6b9;
-    text-align: center;
+/* 全体のスタイル */
+body {
+    background-color: #d5d6b9; /* 背景色 */
+    text-align: center; /* 中央揃え */
 }
 
+/* ページトップのスタイル */
 .pagetop {
-    text-align: center; /* 中央揃え */
     padding: 20px; /* 内側の余白 */
     background-color: #f0f0f0; /* 背景色 */
     border-bottom: 2px solid #ccc; /* 下の境界線 */
 }
 
+/* h1のスタイル */
 h1 {
     font-size: 2.5em; /* 見出しのサイズ */
     margin: 0; /* 外側の余白をゼロに */
     color: #333; /* テキストの色 */
 }
 
+/* カウントのスタイル */
 #historyCount {
     font-size: 1.2em; /* カウントのサイズ */
     color: #666; /* テキストの色 */
 }
 
+/* ナビゲーションのスタイル */
 #navigation {
     margin-top: 15px; /* 上の余白 */
 }
@@ -35,10 +39,63 @@ h1 {
 #navigation a:hover {
     color: #0056b3; /* ホバー時の色 */
 }
-#explanation{
-    text-align: center; /* 中央揃え */
+
+/* 説明のスタイル */
+#explanation {
     padding: 20px; /* 内側の余白 */
     background-color: #f0f0f0; /* 背景色 */
     border-bottom: 2px solid #ccc; /* 下の境界線 */
-    margin-top: 10px;
+    margin-top: 10px; /* 上の余白 */
+}
+
+/* プレイヤー情報のスタイル */
+#playerInfo, #weaponInfo {
+    background-color: #f0f8ff; /* 背景色 */
+    border: 2px solid #4682b4; /* ボーダーの色と太さ */
+    border-radius: 8px; /* 角を丸くする */
+    padding: 20px; /* 内側の余白 */
+    margin: 20px; /* 外側の余白 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    text-align: center; /* テキストを中央揃え */
+}
+
+#playerInfo h2, #weaponInfo h2 {
+    color: #333; /* テキストの色 */
+    font-family: 'Arial', sans-serif; /* フォント */
+    margin: 10px 0; /* 上下の余白 */
+}
+
+/* ボタンのスタイル */
+button {
+    background-color: #e74c3c; /* 背景色 */
+    color: white; /* テキストの色 */
+    border: none; /* ボーダーをなしに */
+    border-radius: 5px; /* 角を丸くする */
+    padding: 10px 20px; /* 内側の余白 */
+    font-size: 1.2em; /* フォントサイズ */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    transition: background-color 0.3s; /* ホバー時のスムーズな背景色の変化 */
+}
+
+button:hover {
+    background-color: #c0392b; /* ホバー時の背景色 */
+}
+.register {
+    background-color: #4CAF50; /* 背景色（緑） */
+    color: white; /* テキストの色 */
+    border: none; /* ボーダーをなしに */
+    border-radius: 5px; /* 角を丸くする */
+    padding: 10px 20px; /* 内側の余白 */
+    font-size: 1.2em; /* フォントサイズ */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    transition: background-color 0.3s, transform 0.2s; /* スムーズな変化 */
+}
+
+.register:hover {
+    background-color: #45a049; /* ホバー時の背景色 */
+    transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.register:active {
+    transform: scale(0.95); /* クリック時に少し縮小 */
 }
