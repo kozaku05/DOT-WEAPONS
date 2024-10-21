@@ -26,7 +26,7 @@ body {
     border: 2px solid #ff6600; /* 濃いオレンジ */
     border-radius: 5px;
     margin: 0 5px;
-    transition: all 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #navigation a:hover {
@@ -34,39 +34,56 @@ body {
     color: white;
 }
 
-#information {
+#Gacha {
     margin: 20px;
-    font-size: 1.2em;
 }
 
-#playerInfo {
-    margin: 20px;
+#TYPE1, #TYPE2, #TYPE3 {
+    margin: 20px 0;
     padding: 20px;
-    background-color: #ffffff; /* 白 */
     border: 2px solid #ffcc00; /* 黄色 */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #333;
 }
 
-#nameArea {
-    margin: 20px;
-    padding: 20px;
-    background-color: #ffffff; /* 白 */
-    border: 2px solid #ffcc00; /* 黄色 */
-    border-radius: 5px;
+#TYPE1 {
+    background-color: #f8d3f9; /* 明るいピンク */
 }
 
-#nameArea h1 {
+#TYPE2 {
+    background-color: #d0e4ff; /* 明るい青 */
+}
+
+#TYPE3 {
+    background-color: #d0f7f4; /* 明るい緑 */
+}
+
+#TYPE1 h1 {
+    color: #d5006d; /* 明るいピンク系 */
+}
+
+#TYPE2 h1 {
+    color: #1976d2; /* 明るい青系 */
+}
+
+#TYPE3 h1 {
+    color: #388e3c; /* 明るい緑系 */
+}
+
+#money {
     font-size: 1.5em;
-    color: #ff6600; /* 濃いオレンジ */
+    color: #ffffff; /* 白色 */
+    background-color: #ff6600; /* 濃いオレンジ */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#inputName {
-    padding: 10px;
-    margin-right: 10px;
-    border: 2px solid #ffcc00; /* 黄色 */
-    border-radius: 5px;
+#Gacha h2 {
     font-size: 1em;
+    margin: 5px 0;
 }
 
 button {
@@ -77,7 +94,8 @@ button {
     color: #000;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
 }
 
 button:hover {
