@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOT WEAPONS</title>
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
+  </head>
+  <body>
     <div class="pagetop">
-        <h1>DOT WEAPONSへようこそ！<p id="historyCount"></p>
-        </h1>
-        <div id="navigation">
-            <a href="shop/shop.html">ショップに行く</a>
-            <a href="fight/fight.html">戦闘</a>
-            <a href="weapons/weapons.html">武器</a>
-        </div>
+      <h1>DOT WEAPONSへようこそ！</h1>
+      <div id="navigation">
+        <a href="equipment/">装備品</a>
+        <a href="dungeon/">ダンジョン</a>
+        <a href="weapons/weapons.html">武器ガチャ</a>
+      </div>
     </div>
-    <div id="info"></div>
-    <div id=playerInfo><h2>プレイヤー情報</h2><br> <div id="weapons"><h2>武器情報</h2></div></div>
-    <div id="weaponInfo"><h2>武器情報</h2></div>
-    <div id="explanation">
-        <h2>このゲームは武器の性能をどれだけ良い物が出せるかがメインコンテンツです！</h2>
-        <h2>戦闘でお金を稼ぎ武器の錬金を行います</h2>
-        <h2>手に入れた武器でダンジョンを攻略しトップを目指そう！</h2>
-        <input type="text" placeholder="名前を入力して下さい" id="name">
-        <button onclick="registername()" class="register">登録</button>
+    <div id="information"></div>
+    <div id="playerInfo"></div>
+    <div id="nameArea">
+        <h1>まずはゲーム説明.txtを読みましょう</h1>
+        <input type="text" id="inputName">
+        <button onclick="setName()">登録</button>
     </div>
-    <button onclick="deleteAll()">データをすべて削除する</button>
-    <script src="sctipt.js"></script>
-</body>
-
-
+  </body>
+  <script src="script.js"></script>
 </html>

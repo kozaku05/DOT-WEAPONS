@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOT WEAPONS - weapons</title>
+    <link rel="stylesheet" href="weapons.css">
 </head>
 <body>
-    
+    <div class="pagetop">
+        <h1>DOT WEAPONSへようこそ！</h1>
+        <div id="navigation">
+          <a href="equipment/">装備品</a>
+          <a href="dungeon/">ダンジョン</a>
+          <a href="weapons/weapons.html">武器ガチャ</a>
+        </div>
+      </div>
+    <div id="Gacha">
+        <h2 id="money"></h2>
+        <div id="TYPE1">
+            <h1>安定型武器のガチャ</h1>
+            <h2>出る内容:id2～id6 weapons.txtを参照</h2>
+            <button onclick="type1()">ガチャを引く:800マネー</button>
+        </div>
+
+        <div id="TYPE2">
+            <h1>HP特化型武器のガチャ</h1>
+            <h2>出る内容:id7～id11 weapons.txtを参照</h2>
+            <button onclick="type2()">ガチャを引く:1000マネー</button>
+        </div>
+
+        <div id="TYPE3">
+            <h1>攻撃力特化型武器のガチャ</h1>
+            <h2>出る内容:id11～id16 weapons.txtを参照</h2>
+            <button onclick="type3()">ガチャを引く:1000マネー</button>
+        </div>
+    </div>
 </body>
 <script src="weapons.js"></script>
 </html>
