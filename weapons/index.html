@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOT WEAPONS - weapons</title>
+    <link rel="stylesheet" href="/weapons/weapons.css" />
+  </head>
+  <body>
+    <div class="pagetop">
+      <h1>DOT WEAPONSへようこそ!</h1>
+      <div id="navigation">
+        <a href="/equipment">装備品</a>
+        <a href="/dungeon">ダンジョン</a>
+        <a href="/weapons">武器ガチャ</a>
+      </div>
+    </div>
+    <div id="Gacha">
+      <h2 id="money"></h2>
+      <div id="TYPE1">
+        <h1>安定型武器のガチャ</h1>
+        <h2>出る内容:バランスソード,重厚な盾,標準の槍,安定した斧,堅実な短剣</h2>
+        <button onclick="type1()">ガチャを引く:800マネー</button>
+      </div>
+
+      <div id="TYPE2">
+        <h1>HP特化型武器のガチャ</h1>
+        <h2>
+          出る内容:ヒーリングスタッフ,ライフボウ,リカバリーソード,ウェルネスハンマー,ヒールクレイモア
+        </h2>
+        <button onclick="type2()">ガチャを引く:1000マネー</button>
+      </div>
+
+      <div id="TYPE3">
+        <h1>攻撃力特化型武器のガチャ</h1>
+        <h2>
+          出る内容:強力な剣,猛撃の斧,強打の弓,高威力ハンドガン,強襲ライフル
+        </h2>
+        <button onclick="type3()">ガチャを引く:1000マネー</button>
+      </div>
+    </div>
+    <div id="information"></div>
+  </body>
+  <script src="/weapons/weapons.js"></script>
+</html>
