@@ -59,18 +59,6 @@ body {
     background-color: #d0f7f4; /* 明るい緑 */
 }
 
-#TYPE1 h1 {
-    color: #d5006d; /* 明るいピンク系 */
-}
-
-#TYPE2 h1 {
-    color: #1976d2; /* 明るい青系 */
-}
-
-#TYPE3 h1 {
-    color: #388e3c; /* 明るい緑系 */
-}
-
 #money {
     font-size: 1.5em;
     color: #ffffff; /* 白色 */
@@ -78,7 +66,12 @@ body {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0; /* マージンを追加して間隔を確保 */
+}
+
+#Gacha h1 {
+    font-size: 1.5em;
+    color: #ff6600; /* 濃いオレンジ */
 }
 
 #Gacha h2 {
@@ -99,6 +92,35 @@ button {
 }
 
 button:hover {
+    background-color: #ff6600; /* 濃いオレンジ */
+    color: white;
+}
+#information {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* 白色背景 */
+    border: 2px solid #ffcc00; /* 黄色のボーダー */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#information h2 {
+    margin: 10px 0;
+    color: #333; /* ダークグレー */
+}
+
+#information button {
+    margin: 5px 10px;
+    background-color: #ffcc00; /* 黄色 */
+    border: 2px solid #ff6600; /* 濃いオレンジ */
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#information button:hover {
     background-color: #ff6600; /* 濃いオレンジ */
     color: white;
 }

@@ -40,9 +40,15 @@ function gacha(type, cost, maxFight, maxHp, maxsatisfaction) {
     return;
   }
   gachaArea.style.display = "none";
-  localStorage.setItem('money',parseInt(money)-cost);
-  let weapon =
-    Math.floor(Math.random() * Object.keys(weaponsTypes[type]).length) + 1;
+  localStorage.setItem("money", parseInt(money) - cost);
+  let weapon;
+  if (type == "type1") {
+    weapon = Math.floor(Math.random() * 5) + 1;
+  } else if (type == "type2") {
+    weapon = Math.floor(Math.random() * 5) + 6;
+  } else {
+    weapon = Math.floor(Math.random() * 5) + 11;
+  }
   let weaponName = weaponsTypes[type][weapon][0];
   let fight = Math.floor(Math.random() * maxFight) + 1;
   let hp = Math.floor(Math.random() * maxHp) + 1;
@@ -60,7 +66,7 @@ function gacha(type, cost, maxFight, maxHp, maxsatisfaction) {
     information.innerHTML = `<h2>新しい武器を獲得しました${weaponInfo.name}</h2><h2>攻撃力:${weaponInfo.fight}</h2><h2>追加HP:${weaponInfo.hp}</h2><h2>会心ダメージ:${weaponInfo.satisfaction}%</h2><button onclick='location.reload()'>OK</button>`;
   } else {
     let weaponInfo = JSON.parse(localStorage.getItem(weapon));
-    information.innerHTML = `<h2>同じ武器を獲得しました${weaponInfo.name}</h2><h2>以前のステータス</h2><h2>攻撃力:${weaponInfo.fight}</h2><h2>追加HP:${weaponInfo.hp}</h2><h2>会心ダメージ:${weaponInfo.satisfaction}%</h2><h2>今回のステータス</h2><h2>攻撃力:${fight}</h2><h2>追加HP:${hp}</h2><h2>会心ダメージ:${satisfaction}%</h2><button onclick='swap(${weapon},${result})'>武器を変える</button><button onclick='location.reload()'>キャンセル</button>`;
+    information.innerHTML = `<h2>同じ武器を獲得しました${weaponInfo.name}</h2><h2>以前のステータス</h2><h2>攻撃力:${weaponInfo.fight}</h2><h2>追加HP:${weaponInfo.hp}</h2><h2>会心ダメージ:${weaponInfo.satisfaction}%</h2><br><h2>今回のステータス</h2><h2>攻撃力:${fight}</h2><h2>追加HP:${hp}</h2><h2>会心ダメージ:${satisfaction}%</h2><button onclick='swap(${weapon},${result})'>武器を変える</button><button onclick='location.reload()'>キャンセル</button>`;
   }
 }
 function swap(weapon, result) {
@@ -78,7 +84,7 @@ function type1() {
   } else {
     gacha("type1", 800, 800000, 1500000, 30);
   }
-};
+}
 function type2() {
   if (masterRank == 0) {
     gacha("type2", 1000, 10000, 10000, 5);
@@ -89,7 +95,7 @@ function type2() {
   } else {
     gacha("type2", 1000, 700000, 2000000, 20);
   }
-};
+}
 function type3() {
   if (masterRank == 0) {
     gacha("type3", 1000, 10000, 10000, 5);
@@ -100,4 +106,4 @@ function type3() {
   } else {
     gacha("type3", 1000, 1200000, 1000000, 50);
   }
-};
+}
