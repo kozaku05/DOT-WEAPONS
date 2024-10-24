@@ -1,0 +1,99 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #cceeff; /* 明るい青色 */
+    color: #333;
+}
+
+.pagetop {
+    background-color: #ffcc00; /* 黄色 */
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff6600; /* 濃いオレンジのボーダー */
+}
+
+#navigation {
+    margin: 20px 0;
+}
+
+#navigation a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: 2px solid #ff6600; /* 濃いオレンジ */
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navigation a:hover {
+    background-color: #ff6600; /* 濃いオレンジ */
+    color: white;
+}
+
+#weaponType1, #weaponType2, #weaponType3 {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ffcc00; /* 黄色 */
+    border-radius: 5px; 
+    background-color: #ffffff; /* 白 */
+}
+
+.weapon-container {
+    display: flex;
+    flex-wrap: wrap; /* 自動で改行 */
+    justify-content: flex-start; /* 左寄せ */
+}
+
+.weapon {
+    flex: 0 0 20%; /* 幅を20%に設定（5つ横に並ぶ） */
+    margin: 10px; /* 各武器間のマージン */
+    padding: 10px;
+    border: 1px solid #ffcc00; /* 黄色のボーダー */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* 薄いグレー */
+}
+
+h2 {
+    color: #ff6600; /* 濃いオレンジ */
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    border: 2px solid #ff6600; /* 濃いオレンジ */
+    border-radius: 5px;
+    background-color: #ffcc00; /* 黄色 */
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #ff6600; /* 濃いオレンジ */
+    color: white;
+}
+#information {
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff3cd; /* 薄い黄色 */
+    border: 2px solid #ffeeba; /* 薄い黄色のボーダー */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 影を追加 */
+    color: #856404; /* 薄い黄色に合う文字色 */
+    font-size: 1.1em; /* フォントサイズを少し大きく */
+}
+
+#information h2 {
+    margin: 10px 0; /* ヘッダーの上下のマージン */
+}
+
+button {
+    margin-top: 10px; /* ボタンの上にスペースを追加 */
+    padding: 8px 12px; /* ボタンのパディング */
+}
