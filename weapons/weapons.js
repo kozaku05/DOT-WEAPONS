@@ -33,12 +33,14 @@ document.getElementById("money").innerHTML = `あなたの所持金は：${money
 let gachaArea = document.getElementById("Gacha");
 let masterRank = localStorage.getItem("masterRank");
 let information = document.getElementById("information");
+information.style.display = "none";
 //ガチャのコード
 function gacha(type, cost, maxFight, maxHp, maxsatisfaction) {
   if (cost > money) {
     alert("マネーが足りません");
     return;
   }
+  information.style.display = "block";
   gachaArea.style.display = "none";
   localStorage.setItem("money", parseInt(money) - cost);
   let weapon;
