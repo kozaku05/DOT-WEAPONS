@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOT WEAPONS</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>DOT WEAPONS dungeon</title>
+    <link rel="stylesheet" href="dungeon.css" />
   </head>
   <body>
     <div class="pagetop">
@@ -15,13 +15,12 @@
         <a href="/weapons">武器ガチャ</a>
       </div>
     </div>
-    <div id="information"></div>
-    <div id="playerInfo"></div>
-    <div id="nameArea">
-      <h1>まずはweapons.txtを読みましょう<a href="weapons.txt">ここから見る</a></h1>
-      <input type="text" id="inputName" autocomplete="off" />
-      <button onclick="setName()">登録</button>
+    <div id="mainDungeon">
+      <h1>メインダンジョン</h1>
+      <h2 id="level"></h2>
+      <button onclick="location.href='maindungeon/'">ダンジョンに入る</button>
+      <button onclick="reset()">一階層に戻る（ダンジョンリセット）</button>
     </div>
   </body>
-  <script src="/script.js"></script>
+  <script src="dungeon.js"></script>
 </html>

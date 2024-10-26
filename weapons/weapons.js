@@ -109,3 +109,19 @@ function type3() {
     gacha("type3", 1000, 1200000, 1000000, 50);
   }
 }
+let masterRankArea=document.getElementById('masterRankArea')
+if(localStorage.getItem('masterRank')==3) masterRankArea.style.display='none'
+function levelUp(){
+  if(parseInt(localStorage.getItem('money')) > 14999){
+    money-=15000;
+    localStorage.setItem('money',money)
+    information.style.display='block'
+    information.innerHTML="<h2>武器マスターランクを上げました</h2>"
+    localStorage.setItem('masterRank',parseInt(localStorage.getItem('masterRank'))+1);
+    setTimeout(() => {
+      location.reload();
+    }, 1000);
+  }else{
+    alert("マネーが足りません");
+  }
+}
