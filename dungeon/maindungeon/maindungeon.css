@@ -1,0 +1,80 @@
+/* 全体のスタイル */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1a1a1a; /* 深い黒色 */
+  color: #f0f0f0; /* テキストの色 */
+  margin: 0;
+  padding: 20px;
+}
+
+/* イラスト用のスタイル（シンプルなダンジョン風の背景） */
+#illustration {
+  width: 100%;
+  height: 300px; /* イラストの高さ */
+  background-color: #333; /* ダンジョンの基本色 */
+  background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1) 25%,
+      transparent 25%
+    ),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%);
+  background-size: 20px 20px; /* パターンのサイズ */
+  border: none; /* ボーダーなし */
+  margin-bottom: 20px; /* 下の余白 */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* 影を追加 */
+}
+
+/* ライブコメンタリーのスタイル */
+#liveCommentary {
+  width: 100%; /* 幅を100%に変更 */
+  height: 150px; /* 高さを指定 */
+  border: 1px solid #555; /* より暗いボーダー */
+  background-color: #222; /* 背景色 */
+  color: #ffffff; /* テキストの色 */
+  overflow-y: auto; /* 垂直方向にスクロール可能 */
+  padding: 10px; /* 内側の余白 */
+  margin-bottom: 20px; /* 下の余白 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* 影を追加 */
+}
+
+/* 操作ボタンのスタイル */
+#operation {
+  display: flex; /* フレックスボックスで配置 */
+  justify-content: space-around; /* ボタンの間隔を均等に */
+  flex-wrap: wrap; /* 画面幅に応じてボタンを折り返す */
+}
+
+button {
+  background-color: #8e44ad; /* ダークパープル */
+  color: white; /* ボタンのテキスト色 */
+  border: none; /* ボーダーなし */
+  border-radius: 5px; /* 角を丸く */
+  padding: 15px 25px; /* 内側の余白を大きく */
+  cursor: pointer; /* マウスカーソルをポインターに */
+  transition: background-color 0.3s; /* ホバー時のトランジション */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* 影を追加 */
+  font-size: 16px; /* フォントサイズを少し大きく */
+}
+
+button:hover {
+  background-color: #732d91; /* ホバー時の色 */
+}
+
+/* playerInfoのスタイル */
+#playerInfo {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: space-between; /* 子要素を左右に配置 */
+  align-items: center; /* 縦方向のセンタリング */
+  margin-bottom: 20px; /* 下の余白 */
+  padding: 10px; /* 内側の余白 */
+  border: 1px solid #555; /* ボーダー */
+  background-color: #222; /* 背景色 */
+  color: #ffffff; /* テキスト色 */
+}
+
+/* ステータス情報のスタイル */
+#playerInfo p {
+  margin: 0; /* マージンをリセット */
+}
