@@ -192,10 +192,10 @@ function information() {
     log(`情報: ${enemyData.enemies[enemy1].name}のHP:${hp1} 攻撃力:${fight1}説明:${enemyData.enemies[enemy1].description}`);
   }
   if (enemy2Defeated == false) {
-    log(`情報: ${enemyData.enemies[enemy2].name}のHP:${hp2} 攻撃力:${fight2} 説明:${enemyData.enemies[enemy1].description}`);
+    log(`情報: ${enemyData.enemies[enemy2].name}のHP:${hp2} 攻撃力:${fight2} 説明:${enemyData.enemies[enemy2].description}`);
   }
   if (enemy3Defeated == false) {
-    log(`情報: ${enemyData.enemies[enemy3].name}のHP:${hp3} 攻撃力:${fight3} 説明:${enemyData.enemies[enemy1].description}`);
+    log(`情報: ${enemyData.enemies[enemy3].name}のHP:${hp3} 攻撃力:${fight3} 説明:${enemyData.enemies[enemy3].description}`);
   }
 }
 function runAway() {
