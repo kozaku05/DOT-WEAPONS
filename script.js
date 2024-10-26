@@ -31,3 +31,7 @@ function getPlayerInfo() {
   playerInfo.innerHTML = `<h1>プレイヤー情報:</h1><h2>あなたの名前:${playerName}</h2><h2>所持金:${playerMoney}</h2><h2>武器マスターランク:${masterRank}</h2>`;
 }
 getPlayerInfo();
+function reset(){
+  localStorage.clear();
+  location.reload();
+}
